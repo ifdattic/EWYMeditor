@@ -45,6 +45,12 @@ Or if you want to add textarea without model:
 )); ?>
 ```
 
+You will also need to add `wymupdate` class to your submit button or change the update selector. Update selector can be changed by providing `updateSelector` and `updateEvent` parameters to options array. For example you can create a submit button like this:
+
+```php
+<?php echo CHtml::submitButton($model->isNewRecord ? 'Submit' : 'Save', array('class' => 'wymupdate')); ?>
+```
+
 Configuration
 -------------
 
